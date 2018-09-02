@@ -1,0 +1,32 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Area of a circle with radius of 5.0 is " + area(5.0));
+        System.out.println("Area of a rectangle with 4 and 5 parameters is " + area(4, 5));
+        System.out.println("Area of a circle with radius of 20.0 is " + area(20.0));
+        System.out.println("Area of a circle with radius of 57.0 is " + area(57.0));
+
+
+    }
+
+    public static double area (double radius){
+
+        if (radius < 0) {
+            return -1.0;
+        }
+        return radius * radius * 3.14159;
+    }
+
+    public static double area (double x, double y){
+
+        if (x < 0 || y < 0) {
+            return -1.0;
+        }
+        return x * y;
+
+    }
+
+}
